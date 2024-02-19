@@ -112,6 +112,9 @@ class GameController extends Controller
         if ($option1['name'] === $option2['name'] && $option2['name'] === $option3['name']) {
             $userCredits = $userCredits + $option1['points'];
             Session::put('credits', $userCredits);
+        } else {
+            $userCredits = $userCredits - 1;
+            Session::put('credits', $userCredits);
         }
     }
 }
