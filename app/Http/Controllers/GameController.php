@@ -86,6 +86,13 @@ class GameController extends Controller
          }
          return view('game');
     }
+
+    public function endGame()
+    {
+        Session::flush();
+        return redirect('/game/session');
+    }
+
     private function generateLootOptions($lootOptions)
     {
         $generatedOptions = [];

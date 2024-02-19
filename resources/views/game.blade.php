@@ -40,7 +40,10 @@
                 </form>            
             </div>
             <div class="flex-row justify-center pt-20">
-                <button>Cash Out</button>
+            <form action="/game/session/end" method="post">
+                    @csrf
+                    <button type="submit">Cash Out</button>
+                </form>   
             </div>
         </div>
     </body>
