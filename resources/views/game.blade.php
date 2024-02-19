@@ -18,19 +18,29 @@
                 <h1>Jackpot Game </h1>
                 <h2>Credits: {{ Session::get('credits') }}</h2>
             </div>
-            <div>
+            <div class="flex-row space-between">
                 <table class="w-100">
                     <tbody>
                         <tr class="flex-row space-between">
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
+                            @if(Session::has('option1'))
+                                <td>{{ Session::get('option1')['initial'] }}</td>
+                                <td>{{ Session::get('option2')['initial'] }}</td>
+                                <td>{{ Session::get('option3')['initial'] }}</td>
+                            @else
+                                <td>X</td>
+                                <td>X</td>
+                                <td>X</td>
+                            @endif
                         </tr>
                     </tbody>
                 </table>
+                <form action="/game/session" method="post">
+                    @csrf
+                    <button type="submit">Spin Me</button>
+                </form>            
             </div>
             <div class="flex-row justify-center pt-20">
-                <button>Spin</button>
+                <button>Cash Out</button>
             </div>
         </div>
     </body>

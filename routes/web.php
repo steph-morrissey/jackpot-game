@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/game/session', [GameController::class, 'index']);
+
+Route::post('/game/session', [GameController::class, 'spin']);
