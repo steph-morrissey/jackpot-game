@@ -1,26 +1,70 @@
-.flex-row {
+.flex {
     display: flex;
     align-items: center;
 }
+
+.flex-row {
+    justify-content: space-between;
+}
+
 .justify-center {
     justify-content: center;
 }
+
 .space-between {
     justify-content: space-between;
 }
+
 .space-around {
     justify-content: space-around;
 }
-td {
-    text-align: center;
-    width: 100%;
-}
+
 .w-80 {
     width: 80%;
 }
-.w-100 {
+
+.text-center {
+    text-align: center;
+}
+
+.full-width {
     width: 100%;
 }
-.pt-20 {
+
+.padding-top-20 {
     padding-top: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #ccc;
+}
+
+td {
+    height: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 0 5px 0 5px;
+}
+
+.btn-spin {
+    background-color: blue;
+    color: white;
+}
+
+.btn-cash {
+    background-color: red;
+    color: white;
+}
+
+/* Example for media queries - adjust as needed */
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
 }

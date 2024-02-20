@@ -13,6 +13,10 @@ In order to be able to play Jackpot! please ensure you have the following instal
 
 ### Getting Started
 
+Clone the repository:
+
+`git clone https://github.com/steph-morrissey/jackpot-game.githttps://github.com/steph-morrissey/jackpot-game.git`
+
 To setup your local development environment and begin playing the game open a terninal in your preferred console and ensure that you are in the root of the jackpot-game directory.
 
 Install all relevant dependencies by running the following command:
