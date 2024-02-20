@@ -10,6 +10,7 @@ In order to be able to play Jackpot! please ensure you have the following instal
 
 -   PHP
 -   composer
+-   Node.js
 
 ### Getting Started
 
