@@ -62,9 +62,8 @@ td {
     color: white;
 }
 
-/* Example for media queries - adjust as needed */
 @media (max-width: 768px) {
     .flex-row {
-        flex-direction: column; /* Change to column layout on smaller screens */
+        flex-direction: column;
     }
 }
