@@ -17,7 +17,14 @@ To setup your local development environment and begin playing the game open a te
 
 Install all relevant dependencies by running the following command:
 
-`composer install `
+`composer install ` and
+`npm install`
+
+Create a .env file within the root of the directory and copy the contents of .env.example file into it and save
+
+Now generate an application key by running the command:
+
+`php artisan key:generate`
 
 Then to start the server locally run:
 
